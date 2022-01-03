@@ -1,8 +1,8 @@
 var start = new Date();
 
-var bufferSize = 300; // 640
-var numRuns = 100000; // 1000000000
-var dropRate = 0.1;
+var bufferSize = 640; // 640
+var numRuns = 10000000; // 1000000000
+var dropRate = 0.5; // 0.5 for blaze rod
 
 var buffer = [];
 var maxCount = 0;
@@ -25,6 +25,6 @@ for (let i = 0; i < numRuns; i++) {
   }
 }
 
-console.log('max count: ', maxCount);
-console.log('max perc: ', maxCount / bufferSize);
-console.log('run time: ', (new Date() - start) / 1000);
+console.log('max drops: ', maxCount);
+console.log('max perc:  ', (maxCount * 100) / bufferSize + ' %');
+console.log('run time:  ', (new Date() - start) / 1000 + ' s');

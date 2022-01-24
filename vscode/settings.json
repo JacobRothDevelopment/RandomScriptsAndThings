@@ -36,7 +36,7 @@
     "HTML (Eex)"
   ],
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "cSpell.userWords": ["btn", "endregion", "Nums", "redhawk", "vsts"],
   "[twig]": {

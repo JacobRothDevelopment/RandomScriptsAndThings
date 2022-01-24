@@ -1,33 +1,25 @@
 {
   "editor.tabSize": 4,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.autoClosingQuotes": "always",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "editor.autoClosingQuotes": "always",
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
+  "nativescript.analytics.enabled": false,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
-  "nativescript.analytics.enabled": false,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
   "eslint.format.enable": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
-  // "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.minimap.enabled": true,
   "rest-client.certificates": {},
   "diffEditor.ignoreTrimWhitespace": false,
   "NativescriptExtend.emulatorPath": "C:\\Android\\android-sdk\\emulator\\emulator.exe",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "php.executablePath": "C:\\php\\php.exe",
   "auto-close-tag.activationOnLanguage": [
     "php",
@@ -35,10 +27,41 @@
     "HTML (EEx)",
     "HTML (Eex)"
   ],
+  "cSpell.userWords": ["btn", "endregion", "Nums", "redhawk", "vsts"],
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": ""
+    }
+  ],
+  "emulator.emulatorPathWindows": "C:\\Users\\jacob\\AppData\\Local\\Android\\Sdk\\emulator",
+  "dart.flutterSdkPath": "C:\\src\\flutter",
+  "rest-client.previewColumn": "beside",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+
+  // special extension associations
+  "files.associations": {
+    "*.table": "plaintext"
+  },
+
+  // Language Specifics
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[plaintext]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.defaultFormatter": null
+  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "cSpell.userWords": ["btn", "endregion", "Nums", "redhawk", "vsts"],
   "[twig]": {
     "editor.defaultFormatter": "mblode.twig-language-2"
     // "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -51,23 +74,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
-  "mssql.connections": [
-    {
-      "server": "{{put-server-name-here}}",
-      "database": "{{put-database-name-here}}",
-      "user": "{{put-username-here}}",
-      "password": ""
-    }
-  ],
-  "emulator.emulatorPathWindows": "C:\\Users\\jacob\\AppData\\Local\\Android\\Sdk\\emulator",
-  "dart.flutterSdkPath": "C:\\src\\flutter",
-  "rest-client.previewColumn": "beside",
-  "files.associations": {
-    "*.table": "plaintext"
-  },
-  "[plaintext]": {
-    "editor.tabSize": 4,
-    "editor.insertSpaces": false,
-    "editor.defaultFormatter": null
+  "[apacheconf]": {
+    "editor.tabSize": 2
   }
 }

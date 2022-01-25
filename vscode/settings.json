@@ -4,23 +4,26 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.autoClosingQuotes": "always",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.minimap.enabled": true,
+
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
+
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
+
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
   "nativescript.analytics.enabled": false,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
   "eslint.format.enable": true,
-  "editor.suggestSelection": "recentlyUsedByPrefix",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.minimap.enabled": true,
   "rest-client.certificates": {},
+  "rest-client.previewColumn": "beside",
   "diffEditor.ignoreTrimWhitespace": false,
-  "NativescriptExtend.emulatorPath": "C:\\Android\\android-sdk\\emulator\\emulator.exe",
-  "php.executablePath": "C:\\php\\php.exe",
   "auto-close-tag.activationOnLanguage": [
     "php",
     "vue",
@@ -36,17 +39,19 @@
       "password": ""
     }
   ],
+
+  // paths
   "emulator.emulatorPathWindows": "C:\\Users\\jacob\\AppData\\Local\\Android\\Sdk\\emulator",
   "dart.flutterSdkPath": "C:\\src\\flutter",
-  "rest-client.previewColumn": "beside",
-  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "NativescriptExtend.emulatorPath": "C:\\Android\\android-sdk\\emulator\\emulator.exe",
+  "php.executablePath": "C:\\php\\php.exe",
 
   // special extension associations
   "files.associations": {
     "*.table": "plaintext"
   },
 
-  // Language Specifics
+  // language specifics
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

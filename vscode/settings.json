@@ -7,6 +7,7 @@
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.minimap.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -30,23 +31,23 @@
     "HTML (EEx)",
     "HTML (Eex)"
   ],
-  "cSpell.userWords": ["btn", "endregion", "Nums", "redhawk", "vsts"],
-  "mssql.connections": [
-    {
-      "server": "{{put-server-name-here}}",
-      "database": "{{put-database-name-here}}",
-      "user": "{{put-username-here}}",
-      "password": ""
-    }
+  "cSpell.enabled": true,
+  "cSpell.userWords": [
+    "autoload",
+    "btn",
+    "endregion",
+    "Nums",
+    "redhawk",
+    "vsts"
   ],
 
   // paths
   "emulator.emulatorPathWindows": "C:\\Users\\jacob\\AppData\\Local\\Android\\Sdk\\emulator",
   "dart.flutterSdkPath": "C:\\src\\flutter",
   "NativescriptExtend.emulatorPath": "C:\\Android\\android-sdk\\emulator\\emulator.exe",
-  "php.executablePath": "C:\\php\\php.exe",
 
   // special extension associations
+  "files.defaultLanguage": "plaintext",
   "files.associations": {
     "*.table": "plaintext"
   },
@@ -69,7 +70,6 @@
   },
   "[twig]": {
     "editor.defaultFormatter": "mblode.twig-language-2"
-    // "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -77,9 +77,23 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.tabSize": 4
   },
   "[apacheconf]": {
     "editor.tabSize": 2
-  }
+  },
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
+  "[php]": {
+    "cSpell.fixSpellingWithRenameProvider": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "php.suggest.basic": false
 }

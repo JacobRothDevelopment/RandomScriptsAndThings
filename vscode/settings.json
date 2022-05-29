@@ -88,12 +88,15 @@
     "editor.wordWrap": "on",
     "editor.quickSuggestions": false,
     "editor.formatOnSave": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 3
   },
   "[php]": {
     "cSpell.fixSpellingWithRenameProvider": false,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[http]": {
+    "editor.wordWrap": "on"
   },
   "php.suggest.basic": false
 }

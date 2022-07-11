@@ -1,0 +1,9 @@
+/* remove shorts sections in recommended */
+#contents ytd-rich-section-renderer {
+    display: none;
+}
+
+/* remove shorts tab in navigation */
+a.yt-simple-endpoint[title="Shorts"] {
+  display: none !important;
+}

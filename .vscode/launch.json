@@ -5,11 +5,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-node",
+      "name": "Run Current File",
+      "program": "${file}",
+      "type": "node",
       "request": "launch",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
       "name": "Did Dream Cheat?",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/DreamProbablyCheated/main.js"
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/Math/DreamProbablyCheated/main.js",
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }

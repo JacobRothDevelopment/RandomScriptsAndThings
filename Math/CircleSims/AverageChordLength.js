@@ -17,7 +17,8 @@ putting this in terms of Θ:
 */
 
 //#region CONST
-const numSamples = 100000;
+const startTime = process.hrtime();
+const numSamples = 112813858; // node max: 112813858
 
 const average = (array) => array.reduce((a, b) => a + b) / array.length;
 const chordLength = (theta) => Math.sqrt(2 * (1 - Math.cos(theta)));
@@ -25,10 +26,20 @@ const chordLength = (theta) => Math.sqrt(2 * (1 - Math.cos(theta)));
 
 let distances = [];
 for (let i = 0; i < numSamples; i++) {
-  const theta = Math.random() * 360; // get random number from 0 - 360
+  const theta = Math.random() * Math.PI * 2; // get random number [0, 2π)
   const d = chordLength(theta);
   distances.push(d);
   // console.log(`${theta} : ${d}`);
 }
 
-console.log(average(distances));
+const avgDistance = average(distances);
+
+const endTime = process.hrtime();
+
+const microTime = (endTime[1] - startTime[1]) / 1000000000;
+const secondsTime = endTime[0] - startTime[0];
+const totalTime = secondsTime + microTime;
+
+console.log(`${numSamples} samples in ${totalTime} s`);
+console.log(`${Math.trunc(numSamples / totalTime)} samples per second`);
+console.log(avgDistance);

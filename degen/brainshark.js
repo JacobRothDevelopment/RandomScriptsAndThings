@@ -1,14 +1,29 @@
 // for arbiter sports clinic
-const AUTO_CLICK_SECONDS = 10;
-const ALLOW_DEBUG = false;
+const DEGEN_AUTO_CLICK_SECONDS = 3;
+const DEGEN_ALLOW_DEBUG = false;
+
+function degen_debug(label, out) {
+  if (DEGEN_ALLOW_DEBUG) {
+    console.log(label, out);
+  }
+}
 
 window.setInterval(() => {
   const timers = document.querySelectorAll('bsk-mediasync-time-display');
-  if (ALLOW_DEBUG) console.log('timers', timers);
+  degen_debug('timers', timers);
   const timeElapsed = timers[0].innerText;
   const totalTime = timers[1].innerText;
 
   if (timeElapsed >= totalTime) {
-    document.querySelector('#play-pause-button[aria-label=play]').click();
+    const play = document.querySelector(
+      '#play-pause-button[aria-label=play]:not(.non-clickable)',
+    );
+
+    if (play != null) {
+      play.click();
+      degen_debug('clicked', play);
+    } else {
+      degen_debug('nothing to click', '');
+    }
   }
-}, AUTO_CLICK_SECONDS * 1000);
+}, DEGEN_AUTO_CLICK_SECONDS * 1000);

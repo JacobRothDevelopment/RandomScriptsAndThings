@@ -1,5 +1,5 @@
-const AUTO_CLICK_SECONDS = 3;
-const ALLOW_DEBUG = false;
+const DEGEN_AUTO_CLICK_SECONDS = 3;
+const DEGEN_ALLOW_DEBUG = false;
 
 window.setInterval(() => {
   var buttons = document.querySelectorAll(
@@ -15,7 +15,7 @@ window.setInterval(() => {
 
   if (importantButtons.length === 1) {
     importantButtons[0].click();
-  } else if (ALLOW_DEBUG) {
+  } else if (DEGEN_ALLOW_DEBUG) {
     console.log(`number of buttons: ${importantButtons.length}`);
   }
-}, AUTO_CLICK_SECONDS * 1000);
+}, DEGEN_AUTO_CLICK_SECONDS * 1000);

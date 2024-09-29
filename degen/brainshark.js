@@ -1,5 +1,5 @@
 // for arbiter sports clinic
-const DEGEN_AUTO_CLICK_SECONDS = 3;
+const DEGEN_AUTO_CLICK_SECONDS = 1;
 const DEGEN_ALLOW_DEBUG = false;
 
 function degen_debug(label, out) {
